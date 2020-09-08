@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>My_Portfolio | Johannes</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+  <link rel="stylesheet" href="/static/home.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+  <!--Scrollreveal animations-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <style>
+
+      html { font-size: 0.75rem; }
+
+      @media (min-width: 576px) {
+          html { font-size: 0.75rem; }
+          #me {width: 100%;}
+      }
+      @media (min-width: 768px) {
+          html { font-size: 0.75rem; }
+          #me {width: 50%;}
+      }
+      @media (min-width: 992px) {
+          html { font-size: 0.75rem; }
+          img {width: 30%;}
+      }
+      @media (min-width: 1200px) {
+          html { font-size: 1rem; }
+          #me {width: 30%;}
+      }
+  </style>
+</head>
+<body>
+<header id="header" class="fixed-top">
+  <nav class="navbar navbar-expand transparent">
+    <a class="navbar-brand mr-3 p-1 text-white" href="#splash" id="logo">Jay</a>
+    <ul class="navbar-nav bg-dark" style="border-radius: 15px" id="navigation">
+      <li class="nav-item active">
+        <a class="nav-link text-white active" href="#splash">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="#aboutMe">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="#education">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="#contact">Contact Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white " href="{% static 'cv.doc' %}">My Resume</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
+{% block body %}
+{% endblock %}
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script>
+  window.sr = ScrollReveal();
+  sr.reveal('#get', {
+    delay: 1000,
+    duration: 2000,
+    origin: 'right',
+    distance: '300px',
+  })
+  sr.reveal('#main', {
+     duration: 1000,
+     origin: 'top'
+   })
+    sr.reveal('#student', {
+    duration: 1000,
+    origin: 'left',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#web', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#design', {
+    duration: 1000,
+    origin: 'right',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#projects', {
+    duration: 1000,
+    origin: 'right',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#skills', {
+    duration: 1000,
+    origin: 'bottom',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#highSchool', {
+    duration: 1000,
+    origin: 'left',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#higherEdu', {
+    duration: 1000,
+    origin: 'right',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#modules', {
+    duration: 1000,
+    origin: 'left',
+    distance: '300px',
+    viewfactor: 0.2,
+  })
+    sr.reveal('#navigation', {
+    delay: 500,
+    duration: 2000,
+    origin: 'top',
+    distance: '1000px',
+  })
+
+</script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+</body>
+</html>

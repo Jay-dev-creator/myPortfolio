@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+<main id="main">
+    <div class="container-fluid bg-dark text-center" id="splash">
+            <h1 class="display-2 1vw pt-4 text-secondary"><span class="text-warning ">Hello!</span><br> I'm Johannes</h1>
+            <h3 class="text-dark">I write code</h3>
+            <a href="#aboutMe"><button type="button" class="btn btn-outline-warning mt-4" id="get">Get to know me</button></a>
+    </div>
+    <div class="container-fluid row justify-content-center pt-2" data-aos="fade-in" id="aboutMe">
+        <div class="card-transparent text-center border-warning m-2 shadow" style="width: 70rem">
+            <div class="card-body">
+                <h2 class="card-title">About <span class="text-warning">Me</span></h2>
+                <div class="col">
+                    <div class="col-4">
+                        <img src="/static/myphoto.jpg" class="img-fluid mx-auto d-block" id="me">
+                    </div>
+                </div>
+
+                <p class="card-text">My name is Kgatle Johannes Matome. I’m a BSc Mathematical Sciences student majoring in Mathematical Statistics and Computer sciences.</p>
+            </div>
+        </div>
+
+        <div class="card text-center border-primary m-2 wow backInLeft" id="student" style="width: 30rem">
+            <div class="card-body">
+                <h3 class="card-title">Student</h3>
+                <i class="fas fa-user-graduate fa-2x text-primary"></i>
+                <p class="card-text">I'm a student at the University of Limpopo, Limpopo. Prior to enrolling as a student i went to St Francis Catholic Academy(High School).
+            I enrolled for a 3 year degree, BSc Mathematical Sciences in 2018 and majored in Mathematical Statistic and Computer Sciences. During the
+            3 year period i have been part of an innovative organization know as Kintelligence, where i was part of the coding team in the development
+            of small projects for the organization.</p>
+            </div>
+        </div>
+        <div class="card text-center border-danger m-2" id="web" style="width: 18rem" >
+            <div class="card-header text-white bg-danger">This is what i do </div>
+            <div class="card-body">
+                <i class="fas fa-globe fa-5x" aria-hidden="true"></i>
+                <h3 class="card-title pt-5">Web development</h3>
+            </div>
+        </div>
+        <div class="card text-center border-success m-2" id="design" style="width: 18rem" >
+            <div class="card-header text-white bg-success">This is what i do </div>
+            <div class="card-body">
+                <i class="fas fa-brush fa-5x"></i>
+                <h3 class="card-title pt-5">Web design</h3>
+            </div>
+        </div>
+        <div class="card text-center bg-info text-white m-2 shadow" id="skills">
+            <div class="card-body">
+                <h3 class="card-title">Skills</h3>
+                <i class="fas fa-grip-horizontal fa-2x text-danger"></i>
+                <p class="card-text">I have passion for software development, i have been learning and developing my programming skills even outside of the classroom.
+                    I have knowledge of <Strong>Javascript, Python, Bootstrap, HTML and CSS </Strong> . I am pursuing a path to becoming a full stack Python developer.
+                    Python frameworks am familiar with includes flask and django.
+                     I love to solve problems and get things done, learn and I continually seek to understand the world I live in.
+                    This is my personal website where I plan to write about the things I’m interested in, share what I’m learning and give updates on the interesting
+                projects i'm involved in</p>
+            </div>
+
+        </div>
+        <div class="card m-2 shadow-lg border-dark" id="projects">
+            <div class="card-header text-center text-dark bg-warning"><h3>My Projects </h3></div>
+            <ul class="list-group">
+                <li class="list-group-item text-center">
+                    <h4>Portfolio <span class="text-warning">profile 1</span></h4>
+                    <a href="https://myportfolio1-jay.herokuapp.com" target="_blank">https://myportfolio1-jay.herokuapp.com/</a><br>
+                    <p>This is my first portfolio profile website, implemented using python, html and css</p>
+                    <img src="/static/portfolioscreenshot.PNG" class="img-fluid mx-auto d-block"><br>
+                    <a href="https://drive.google.com/drive/folders/1FMhrT3Di6dnBbNcbjt103zXKZVixXsl-?usp=sharing" target="_blank">view source code</a>
+                </li>
+                <li class="list-group-item text-center">
+                    <h4><span class="text-warning">To-do</span> web app</h4>
+                    <a href="http://mytodolistweb.herokuapp.com/" target="_blank">http://mytodolistweb.herokuapp.com/</a><br>
+                    <p>To further test and improve my skills i developed a to-do web app, an app that keeps record of tasks
+                        to be completed for the user.</p>
+                    <img src="/static/todoscreenshot.PNG" class="img-fluid mx-auto d-block"><br>
+                    <a href="https://drive.google.com/drive/folders/177OAUPWASrO1XKcIInnxbc8XuuV8v8dp?usp=sharing" target="_blank">View source code</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="nauk-info-connections">
+                        <button type="button" class="btn btn-warning"><a class="text-white" href="{% static 'cv.doc' %}">Download My Resume</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="container-fluid row breadcrumbs justify-content-center pt-5" data-aos="fade-in" id="education">
+        <div class="card text-center border-success m-2 shadow" style="width:100%">
+            <div class="card-body">
+                <h2 class="card-title">Educ<span class="text-success">ation</span></h2>
+            </div>
+        </div>
+        <div class="card text-center bg-dark text-white m-2" style="width: 30rem" id="highSchool">
+            <div class="card-body">
+                <h3 class="card-title">High <span class="text-success">School</span></h3>
+                <i class="fas fa-graduation-cap fa-2x text-primary"></i>
+                <p class="card-text">I, Johannes matriculated at St Francis Catholic School
+                    in 2017 with an admission to study towards a bachelor's degree. My subjects
+                    of study includes Mathematics, Life Sciences, Physical Sciences,
+                    Geography and English</p>
+            </div>
+        </div>
+        <div class="card text-center bg-light text-dark m-2" style="width: 30rem" id="higherEdu">
+            <div class="card-body">
+                <h3 class="card-title">Higher <span class="text-success">Education</span></h3>
+                <i class="fas fa-chalkboard-teacher fa-2x text-info"></i>
+                <p class="card-text">I enrolled for a Bachelor of Science degree majoring in
+                    Mathematical Statistics and Computer Sciences in 2018 at the University
+                    of Limpopo, looking to graduate in 2021.</p>
+            </div>
+        </div>
+        <div class="card text-center border-success m-2" id="modules" style="width: 25rem">
+            <div class="card-body">
+                <h3 class="card-title">Modules <span class="text-success">Passes</span></h3>
+                <i class="fas fa-check fa-2x text-success"></i>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Advanced Calculus</li>
+                    <li class="list-group-item">Applied Mathematics</li>
+                    <li class="list-group-item">Set theory, Linear and abstract algebra</li>
+                    <li class="list-group-item">Statistical Inferences</li>
+                    <li class="list-group-item">Data Organization and Artificial Intelligence</li>
+                    <li class="list-group-item">Data Structures and Computer Architecture</li>
+                    <li class="list-group-item">Computing Concepts and Algorithms</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" id="transcript">
+            <div class="row justify-content-center">
+                <div class="col-3">
+                    <div class="nauk-info-connections">
+                        <button type="button" class="btn btn-success"><a class="text-white" href="{% static 'Full_Academic_Transcript.pdf' %}" target="_blank">Download My Academic Transcript</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid row breadcrumbs justify-content-center pt-1 mt-4" data-aos="fade-in" id="contact">
+            <div class="card text-center m-1 bg-dark shadow" style="width:100%" >
+
+                <div class="card-body">
+                    <div class="template-demo"> <a href="tel:+27716488958" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-phone"><i class="fa fa-phone" aria-hidden="true"></i></button></a>
+                        <a href="mailto: kgatle280@gmail.com" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-phone"><i class="fa fa-envelope" aria-hidden="true"></i></button></a>
+                        <a href="https://www.facebook.com/KgatleJayEm" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook"></i></button></a>
+                        <a href="https://github.com/Jay-dev-creator/Jay" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-github" aria-hidden="true"></i></button></a>
+                        <a href="https://twitter.com/Kgatle_Jay" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-twitter"></i></button></a>
+                        <a href="https://www.linkedin.com/in/johannes-kgatle-73aaab1b0/" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-linkedin"><i class="fa fa-linkedin"></i></button> </a>
+                        <a href="https://api.whatsapp.com/send?phone=27716488958" target="_blank"><button type="button" class="btn btn-social-icon btn-outline-linkedin"><i class="fa fa-whatsapp" aria-hidden="true"></i></button> </a>
+                    </div>
+                </div>
+                <div class="copyright text-white">
+                &copy; Copyright <strong><span>Kgatle JM</span></strong>. All Rights Reserved
+                </div>
+            </div>
+    </div>
+
+
+</main>
+
+{% endblock %}

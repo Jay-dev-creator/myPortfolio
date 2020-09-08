@@ -1,0 +1,84 @@
+
+#home {
+padding-top: 50px;
+background-color: red;
+
+}
+/*
+#heading{
+float:right;
+width: 50%;
+padding: 40px;
+font-family: 'Caveat', cursive;
+font-family: 'Josefin Slab', serif;
+}*/
+
+#splash{
+padding-top: 100px;
+font-family: 'Josefin Slab', serif;
+height:600px;
+background-image: url(/static/background1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#me {
+height:auto;
+float: left;
+}
+#get {
+font-family: 'Noto Sans', sans-serif;
+}
+#logo {
+font-family: 'Caveat', cursive;
+background: rgba(33, 33, 33, .9);
+border-radius: 10px 10px;
+}
+
+/* Social Media Icons */
+.fa {
+  padding: 7px;
+  font-size: 25px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 0.5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-phone {
+  background: 	#FFFFFF;
+  color: black;
+}
+.fa-github {
+  background: #FFFFFF;
+  color: black;
+}
+.fa-whatsapp {
+  background: 	#008000;
+  color: white;
+}
+
+.fa-envelope {
+  background: #FF0000;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
